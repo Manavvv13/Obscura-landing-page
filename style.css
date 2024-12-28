@@ -1,0 +1,160 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Monument";
+  background: #e3e3e3;
+}
+
+h1 {
+  position: absolute;
+  top: 30%; 
+  left: 50%;
+  font-size: 75px;
+  transform: translate(-50%, -50%);
+  color: #101010;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background: #1b1b1b;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+  overflow: hidden;
+  position: fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.social-links {
+  position: absolute;
+  display: flex;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-item i {
+  font-size: 1.5rem; /* Fixed icon size */
+  color: #101010;
+  width: 2.5rem; /* Ensure equal size */
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button {
+  font-size: 1rem; /* Standard button text size */
+  color: #101010;
+  border: 2px solid #101010;
+  border-radius: 30px;
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  height: 3rem; /* Ensure equal button height */
+}
+
+.social-button:hover {
+  background: #101010;
+  color: #fff;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .social-links {
+    bottom: 20%;
+    gap: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+    top: 25%;
+  }
+
+  .social-links {
+    flex-direction: column;
+    bottom: 15%;
+    gap: 1.5em;
+  }
+
+  .social-item i {
+    font-size: 0.8rem; /* Consistent icon size */
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .social-button {
+    font-size: 0.8rem; /* Consistent button size */
+    padding: 10px 20px;
+    height: 3rem;
+  }
+}
