@@ -3,11 +3,16 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  font-family: "Monument";
+  
   background: #e3e3e3;
+}
+@font-face {
+  font-family: "Monument" ;
+  src: url(./MonumentExtended-Regular.ttf);
 }
 
 h1 {
+  font-family: "Monument";
   position: absolute;
   top: 30%; 
   left: 50%;
@@ -22,6 +27,7 @@ body {
 }
 
 .pace {
+  font-family: "Monument";
   pointer-events: none;
   user-select: none;
   z-index: 2000;
@@ -58,6 +64,7 @@ body {
 }
 
 #preloader {
+  font-family: "Monument";
   width: 100%;
   height: 100vh;
   background: #101010;
